@@ -2,7 +2,7 @@ from scrapers import McMenuScarper
 
 
 def main():
-    mc_scraper = McMenuScarper(size=5)
+    mc_scraper = McMenuScarper()
     mc_scraper.run_scraping()
 
 
