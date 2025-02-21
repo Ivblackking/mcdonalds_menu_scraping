@@ -32,4 +32,4 @@ After that the api will be available by the address `http://127.0.0.1:8000` or `
 3. Run sync version of the scraper: `cd scraping` and `python main.py`
 4. To run async version of the scraper do: `cd scraping` and `python async_main.py`
 5. To run the api: `cd api` and `uvicorn main:app --reload`
-6. The api will be available by the address `http://127.0.0.1:8000`
+6. The api will be available by the address `http://127.0.0.1:8000` or `http://127.0.0.1:8000/docs`
