@@ -2,7 +2,7 @@ import json
 from fastapi import FastAPI, HTTPException, status
 
 
-DATA_FILEPATH = "../mc_menu_data_1.json"
+DATA_FILEPATH = "mc_menu_data_for_api.json"
 
 
 app = FastAPI()
