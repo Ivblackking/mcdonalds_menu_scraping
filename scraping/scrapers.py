@@ -7,6 +7,7 @@ from bs4 import BeautifulSoup
 
 class BaseScraper:
     menu_url = "https://www.mcdonalds.com/ua/uk-ua/eat/fullmenu.html"
+    output_filename = "mc_menu_data.json"
     
     def __init__(self, size:int|None = None):
         self.size = size
@@ -77,7 +78,7 @@ class McMenuScraper(BaseScraper):
     
     def run_scraping(self):
         all_items = self.get_all_items()
-        with open("mc_menu_data.json", "w", encoding="utf8") as file:
+        with open(self.output_filename, "w", encoding="utf8") as file:
             json.dump(all_items, file, indent=4, ensure_ascii=False)
 
 
@@ -106,5 +107,5 @@ class AsyncMcMenuScraper(BaseScraper):
     
     async def arun_scraping(self):
         all_items = await self.aget_all_items()
-        with open("mc_menu_data.json", "w", encoding="utf8") as file:
+        with open(self.output_filename, "w", encoding="utf8") as file:
             json.dump(all_items, file, indent=4, ensure_ascii=False)
