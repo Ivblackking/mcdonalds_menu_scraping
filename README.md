@@ -12,7 +12,7 @@ Run the terminal in the root directory of the project and execute the next comma
 `cd scraping`<br />
 `docker build -t scrape .`<br />
 `docker run -v .:/app scrape`<br />
-The result will be stored in the file `mc_menu_data_for_api.json"`. <br />
+The result will be stored in the file `mc_menu_data_for_api.json"` in the `scraping` folder.  <br />
 To try the async version of the scraper comment line 8 and uncomment line 9 in the appropriate Dockerfile and rebuild the docker image.
 
 ### Api
