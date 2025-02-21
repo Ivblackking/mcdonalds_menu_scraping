@@ -1,8 +1,10 @@
-from scrapers import McMenuScarper
+from scrapers import McMenuScraper
+from utils import time_delta
 
 
+@time_delta
 def main():
-    mc_scraper = McMenuScarper()
+    mc_scraper = McMenuScraper()
     mc_scraper.run_scraping()
 
 
