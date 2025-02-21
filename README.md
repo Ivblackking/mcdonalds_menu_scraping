@@ -1,7 +1,7 @@
 ## Run with docker
 ### Scraping
-`cd scraping`
-`docker build -t scrape .`
-`docker run -v .:/app scrape`
+`cd scraping`<br />
+`docker build -t scrape .`<br />
+`docker run -v .:/app scrape`<br />
 
 ### Api
